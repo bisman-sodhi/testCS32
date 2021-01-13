@@ -46,7 +46,8 @@ int indexOfMax(int *a, int n) {
 	for(int i = 1; i < n; i++){
 		if(a[i] > largest){
 			largest = a[i];
-		}	index = i;
+			index = i;
+		}
 	}
 	return index;
 
@@ -86,8 +87,8 @@ int indexOfMin(int *a, int n) {
 void swap(int *a, int i, int j) {
   
 	int store = a[i];
-	int a[i] = a[j];
-	int a[j] = store;
+	a[i] = a[j];
+	a[j] = store;
 	return; // STUB !!! Remove this line and replace with correct code
 
 
